@@ -5,3 +5,17 @@ class ContaCorrente(Conta):
         super().__init__(nome, idConta, saldo)
         self.__tarifa = tarifa
         self.__credito = credito
+
+    def getTarifa(self):
+        return self.__tarifa
+    
+    def setTarifa(self, newTarifa):
+        self.__tarifa = newTarifa
+    
+    def getCredito(self):
+        return self.__credito
+    
+    def setCredito(self, newCredito):
+        self.__credito = newCredito
+
+    
