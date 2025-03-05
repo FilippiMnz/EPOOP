@@ -1,10 +1,10 @@
 from ContasBancarias import Conta
 
 class ContaCorrente(Conta):
-    def __init__(self, nome, idConta, saldo, tarifa, credito):
+    def __init__(self, nome, idConta, saldo, tarifa, LimiteCredito):
         super().__init__(nome, idConta, saldo)
         self.__tarifa = tarifa
-        self.__credito = credito
+        self.__credito = LimiteCredito
 
     def getTarifa(self):
         return self.__tarifa
