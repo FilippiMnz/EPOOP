@@ -16,6 +16,7 @@ class Funcionario(Person):
 
     def setCargo(self, newCargo):
         self.__cargo = newCargo
+
     
     def infoFuncionario(self):
         print(f"Funcionario {super().apresentar()} e trabalha como {self.__cargo} e possui o ID: {self.__id}")
