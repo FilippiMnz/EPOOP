@@ -8,6 +8,6 @@ if __name__ == "__main__":
     print(pessoa.getName())
     pessoa.apresentar()
     pessoa.setName("Gustavo")
-    pessoa.SetAge(20)
+    pessoa.setAge(20)
     pessoa.apresentar()
 
