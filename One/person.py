@@ -1,7 +1,7 @@
 class Person:
-    def __init__(self, name, age, cpf, rg, estado, cidade):
+    def __init__(self, name, born, cpf, rg, estado, cidade):
         self.__name = name
-        self.__age = age
+        self.__born = born
         self.__cpf = cpf
         self.__rg = rg
         self.__estado = estado
@@ -14,10 +14,10 @@ class Person:
         self.__name = newname
 
     def getAge(self):
-        return self.__age
+        return self.__born
     
     def setAge(self, newAge):
-        self.__age = newAge
+        self.__born = newAge
     
     def getCPF(self):
         return self.__cpf
@@ -42,7 +42,7 @@ class Person:
 
     def setCidade(self, novaCidade):
         self.__cidade = novaCidade   
-         
+
     def apresentar(self):
         print(f"Nome: {self.__name}, Idade {self.__age}")
         
