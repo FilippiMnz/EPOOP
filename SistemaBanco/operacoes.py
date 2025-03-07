@@ -15,9 +15,19 @@ class Operacoes:
     def setLimite(self, newLimite):
         self.__limite = newLimite
 
-    def pagarNoCredito(self, valorCompra, limiteCredito):
-        if valorCompra > limiteCredito:
-            return False
-        else:
-            newSaldo = valorCompra - limiteCredito
-            Operacoes.setSaldo(newSaldo)
+class Transacao:
+    def __init(self, valor, descricao):
+        self.__valor = valor
+        self.__descricao = descricao
+
+    def getValor(self):
+        return self.__valor
+    
+    def setValor(self, newValor):
+        self.__valor = newValor
+
+    def getDescricao(self):
+        return self.__descricao
+
+    def setDescricao(self, newDescricao):
+        self.__descricao = newDescricao
