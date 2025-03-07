@@ -23,13 +23,15 @@ class Operacoes:
             self.setSaldo(novoSaldo)
             return f"Saque de {saque}R$ realizado com sucesso, seu novo saldo eh de {self.getSaldo}"
         
-    def Deposito(self, valor):
+    def Depositar(self, valor):
         if valor <= 0:
             return False
         else:
             novoSaldo = valor + self.getSaldo()
             self.setSaldo(novoSaldo)
             return f"Deposito de {valor}R$ foi efetuado com sucesso, seu novo saldo eh de {self.getSaldo}"
+        
+    
 
 class Transacao:
     def __init(self, valor, descricao):
