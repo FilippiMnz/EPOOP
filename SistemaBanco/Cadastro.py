@@ -5,3 +5,17 @@ class Usuario(Pessoa):
         super().__init__(nome, cpf, RG, endereco, dataNascimento)
         self.__email = email
         self.__senha = senha
+
+    def getEmail(self):
+        return self.__email
+    
+    def setEmail(self, newEmail):
+        self.__email = newEmail
+    
+    def getSenha(self):
+        return self.__senha
+
+    def setSenha(self, newPass):
+        self.__senha = newPass
+
+    
