@@ -17,3 +17,14 @@ class Poupanca(Conta):
     
     def setCartaoDebito(self, newCartaoDebito):
         self.__cartaoDebito = newCartaoDebito
+
+    
+    def CompraDebito(self, valor):
+        if valor > self.getSaldo():
+            return False
+        else:
+            novoValor = self.getSaldo() - valor
+            self.setSaldo(novoValor)
+            return f"Compra no valor de {valor}R$ concluida com sucesso"
+    
+    
