@@ -14,6 +14,13 @@ class Operacoes:
     
     def setLimite(self, newLimite):
         self.__limite = newLimite
+    
+    def sacar(self, saque):
+        if saque > self.getSaldo():
+            return False
+        else:
+            self.setSaldo -= saque
+            return f"Saque de {saque}R$ realizado com sucesso, seu novo limite eh de {self.getSaldo}"
 
 class Transacao:
     def __init(self, valor, descricao):
