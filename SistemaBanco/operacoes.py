@@ -19,4 +19,5 @@ class Operacoes:
         if valorCompra > limiteCredito:
             return False
         else:
-            self.__limite = valorCompra - limiteCredito
+            newSaldo = valorCompra - limiteCredito
+            Operacoes.setSaldo(newSaldo)
