@@ -19,7 +19,8 @@ class Operacoes:
         if saque > self.getSaldo():
             return False
         else:
-            self.setSaldo -= saque
+            novoSaldo = saque - self.getSaldo()
+            self.setSaldo(novoSaldo)
             return f"Saque de {saque}R$ realizado com sucesso, seu novo limite eh de {self.getSaldo}"
 
 class Transacao:
