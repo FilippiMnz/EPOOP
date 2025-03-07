@@ -31,3 +31,7 @@ class Transacao:
 
     def setDescricao(self, newDescricao):
         self.__descricao = newDescricao
+
+    
+    def __str__(self):
+        return f"{self.data.strftime('%d/%m/%Y %H:%M')} - {self.__descricao}: R$ {self.__valor:.2f}"
