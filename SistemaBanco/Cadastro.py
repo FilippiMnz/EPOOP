@@ -2,7 +2,7 @@ from cliente import Cliente
 
 class Usuario(Cliente):
     def __init__(self, nome, cpf, RG, endereco, dataNascimento, email, senha, idConta = None):
-        super().__init__(nome, cpf, RG, endereco, dataNascimento, idConta = None)
+        super().__init__(nome, cpf, RG, endereco, dataNascimento, idConta)
         self.__email = email
         self.__senha = senha
         self.__contas = []
@@ -23,7 +23,7 @@ class Usuario(Cliente):
         return super().imprima() + f" Email: {self.__email}"
     
     def adicionarConta(self, conta):
-        if isinstance(conta, Cliente):
+        if isinstance(conta, Usuario):
             self.__contas.append(conta)
             return True
     
@@ -41,4 +41,5 @@ class Usuario(Cliente):
     def ModificarConta(self, cpf):
         for conta in self.__contas:
             if conta.getCPF() == cpf:
-                return f"Olá {self.__nome}, Conta: {self.__idConta}"
+                print(f"Olá {self.__nome}, Conta: {self.__idConta}")
+                
