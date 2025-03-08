@@ -18,4 +18,5 @@ class Usuario(Cliente):
     def setSenha(self, newPass):
         self.__senha = newPass
 
-    
+    def imprima(self):
+        return super().imprima() + f" Email: {self.__email}"
