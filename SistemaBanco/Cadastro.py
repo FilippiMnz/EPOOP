@@ -5,6 +5,7 @@ class Usuario(Cliente):
         super().__init__(nome, cpf, RG, endereco, dataNascimento)
         self.__email = email
         self.__senha = senha
+        self.__contas = []
 
     def getEmail(self):
         return self.__email
@@ -20,3 +21,7 @@ class Usuario(Cliente):
 
     def imprima(self):
         return super().imprima() + f" Email: {self.__email}"
+    
+    def Listar_contas(self):
+        for conta in self.__contas:
+            return f"Usuario: {self.__nome}, CPF: {self.__cpf}"
