@@ -24,4 +24,4 @@ class Usuario(Cliente):
     
     def Listar_contas(self):
         for conta in self.__contas:
-            return f"Usuario: {self.__nome}, CPF: {self.__cpf}"
+            conta.imprima()
