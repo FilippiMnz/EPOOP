@@ -11,7 +11,7 @@ print(cliente1.imprima())
 cliente1.setSenha("root")
 print(cliente1.getSenha())
 
-print(cliente1.LoginADM())
+print(cliente1.Login())
 
 """
 print("Welcome to the los pollos hermanos")

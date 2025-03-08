@@ -43,7 +43,7 @@ class Usuario(Cliente):
             if conta.getCPF() == cpf:
                 print(f"Olá {self.__nome}, Conta: {self.__idConta}")
     
-    def LoginADM(self):
+    def Login(self):
         if super().getNome() == "admin":
             print(f"Administrador Detectado, insira sua senha: ")
             senha = input("password: ")
