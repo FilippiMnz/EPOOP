@@ -35,4 +35,6 @@ class Cliente:
 
     def setDataNascimento(self, newDataNascimento):
         self.__dataNascimento = newDataNascimento
-        
+    
+    def imprima(self):
+        return f"Cliente {self.__nome} CPF: {self.__cpf}, Endereço: {self.__endereco}, Data nascimento: {self.__dataNascimento}, RG: {self.__rg}"
