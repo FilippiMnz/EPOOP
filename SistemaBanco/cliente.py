@@ -1,5 +1,4 @@
 import random 
-from random import *
 class Cliente:
     def __init__(self, nome, cpf, RG, endereco, dataNascimento, idConta = None):
         self.__nome = nome
@@ -7,7 +6,7 @@ class Cliente:
         self.__rg = RG
         self.__endereco = endereco
         self.__dataNascimento = dataNascimento
-        self.__idConta = idConta if idConta else random.randint(1, 100000)
+        self.__idConta = random.randint(1, 100000)
 
     def getNome(self):
         return self.__nome

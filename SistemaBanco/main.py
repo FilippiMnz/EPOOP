@@ -6,7 +6,14 @@ print(cliente1.imprima())
 cliente1.setNome("Hominho")
 print(cliente1.imprima())
 
+cliente1.setNome("admin")
+print(cliente1.imprima())
+cliente1.setSenha("root")
+print(cliente1.getSenha())
 
+print(cliente1.LoginADM())
+
+"""
 print("Welcome to the los pollos hermanos")
 print("Select your option: ")
 print(
@@ -15,8 +22,13 @@ print(
     )
 opcao = input(int())
 
-if opcao == 1:
+if opcao == 1:  
     print("fazer Cadastro")
 elif opcao == 2:
     print("fazer Login")
 
+while True:
+    print("\n-----Menu-----")
+    print("1-Cadastrar ")
+    print("2-Login")
+"""
