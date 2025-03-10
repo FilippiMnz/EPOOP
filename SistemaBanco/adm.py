@@ -10,3 +10,8 @@ class ADM(Usuario):
     
     def setCargo(self, newCargo):
         self.__cargo = newCargo
+
+    
+    def Supremo(self, Usuario):
+        if self.getCargo() == "adm":
+            return True
