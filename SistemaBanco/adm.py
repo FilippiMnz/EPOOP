@@ -14,4 +14,16 @@ class ADM(Usuario):
     
     def Supremo(self, Usuario):
         if self.getCargo() == "adm":
+            adm = True
             return True
+        
+        if adm == True:
+            print("Menu ADM:")
+            print("1- Modificar")
+            print("2- Excluir")
+            print("3- Sair")
+            option = input(int())
+            if option == 1:
+                print("Insira o cpf do usuario que deseja: ")
+                nome = input()
+                print(self.getCPF())
