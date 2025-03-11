@@ -1,8 +1,9 @@
 class Conta:
-    def __init__(self, nome, idConta, saldo):
+    def __init__(self, nome, idConta, saldo, TipoConta):
         self.__nome = nome
         self.__idConta = idConta
         self.__saldo = saldo
+        self.__TipoConta = TipoConta
 
     def getNome(self):
         return self.__nome

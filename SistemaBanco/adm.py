@@ -1,5 +1,6 @@
 from Cadastro import *
-
+from operacoes import *
+from ContasBancarias import Conta
 class ADM(Usuario):
     def __init__(self, nome, cpf, RG, endereco, dataNascimento, email, senha, cargo, idConta = None):
         super().__init__(nome, cpf, RG, endereco, dataNascimento, email, senha, idConta)
@@ -25,5 +26,9 @@ class ADM(Usuario):
             option = input(int())
             if option == 1:
                 print("Insira o cpf do usuario que deseja: ")
-                nome = input()
-                print(self.getCPF())
+                cpfUser = input()
+                if self.getCPF() == cpfUser:
+                    print("usuario Encontrado")
+                    print(f"Usuario: {self.__nome}, Conta: {self.__idConta}, Saldo: {self.getSaldo()}")
+                    return True
+
