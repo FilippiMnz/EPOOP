@@ -31,4 +31,9 @@ class ADM(Usuario):
                     print("usuario Encontrado")
                     print(f"Usuario: {self.__nome}, Conta: {self.__idConta}, Saldo: {self.getSaldo()}")
                     return True
-
+            if option == 2:
+                print("insira o CPF do usuario que deseja remover")
+                cpfUser = input()
+                if self.getCPF == cpfUser:
+                    return True
+                
