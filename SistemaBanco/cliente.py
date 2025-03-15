@@ -1,11 +1,12 @@
 import random 
 class Cliente:
-    def __init__(self, nome, cpf, RG, endereco, dataNascimento, idConta = None):
+    def __init__(self, nome, cpf, RG, endereco, dataNascimento, cargo, idConta = None):
         self.__nome = nome
         self.__cpf = cpf
         self.__rg = RG
         self.__endereco = endereco
         self.__dataNascimento = dataNascimento
+        self.__cargo = cargo
         self.__idConta = random.randint(1, 100000)
 
     def getNome(self):

@@ -1,8 +1,8 @@
 from cliente import Cliente
 
 class Usuario(Cliente):
-    def __init__(self, nome, cpf, RG, endereco, dataNascimento, email, senha, idConta = None):
-        super().__init__(nome, cpf, RG, endereco, dataNascimento, idConta)
+    def __init__(self, nome, cpf, RG, endereco, dataNascimento, email, senha, cargo, idConta = None):
+        super().__init__(nome, cpf, RG, endereco, dataNascimento,cargo, idConta)
         self.__email = email
         self.__senha = senha
         self.__contas = []
