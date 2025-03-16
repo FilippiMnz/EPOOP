@@ -12,7 +12,8 @@ class ADM(Usuario):
     def setCargo(self, newCargo):
         self.__cargo = newCargo
 
-    
+    #Sistema de Login para Admnistradores
+    # implementar regra de somente Adm's poderem adicionar novos Adm's
     def Supremo(self, Usuario):
         if self.getCargo() == "adm":
             adm = True
